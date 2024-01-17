@@ -1,0 +1,111 @@
+/* Create your test CSS here */
+/* Handle basic element styling */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+* {
+    font-family: 'Pathway Extreme', sans-serif;
+} 
+
+body {
+    background-color: antiquewhite;
+}
+/* Handle specific elements nested in the DOM */
+a:link {
+    color: black;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    background-color: black;
+}
+
+.manythings {
+    color: green;
+}
+
+#onething {
+    background-color: red;
+    color: pink;
+    border: 5px solid pink;
+    width: max-content;
+    padding: 5px;
+}
+
+.box p {
+    color:brown;
+}
+
+.box p:first-child {
+    width: max-content;
+    border: 2px solid brown;
+    padding: 2px;
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+h1, h2, .intro {
+    font-style: italic;
+    border-bottom-left-radius: 8px;
+    border: 3px solid blue;
+}
+
+/* the cascade and specifity rules, in this case the  */
+.special {
+    color:green;
+}
+
+p {
+    color: red;
+}
+
+h1 {
+    width: max-content;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.transformTest {
+    background-color: aqua;
+    border: solid black;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    transform: scale(2, 0.5);
+}
+
+.linearBackgroundImg {
+    border: solid black;
+    height: 333px;
+    width: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(assets/500px-image-from-rawpixel-id-6483679-png.png);
+}
+
+p.colorRgbValue {
+    color: rgb(140, 26, 255);
+}
+
+.colorHslValue {
+    color: hsl(150, 100%, 20%);
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: #ffffe6;
+    }
+}
+
+.shorthandProperty {
+    border: solid black;
+    color: black;
+    /* In 4-value shorthands like padding and margin, the values are applied
+   in the order top, right, bottom, left (clockwise from the top). There are also other
+   shorthand types, for example 2-value shorthands, which set padding/margin
+   for top/bottom, then left/right */
+padding: 10px 15px 15px 0px;
+background: pink url(assets/500px-image-from-rawpixel-id-6483679-png.png) 10px 10px repeat-x fixed;
+
+}
