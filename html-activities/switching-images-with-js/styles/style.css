@@ -1,0 +1,17 @@
+img {
+    height: 327px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+    margin: auto auto;
+    border-radius: 30px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
